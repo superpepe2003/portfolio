@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="./assets/main.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <main>
+        <section id="inicio">
+            <div class="row">
+                <div class="col-2">
+                    <img class="img-pic" src="./assets/imagen.jpg" alt="foto">
+                </div>
+                <div class="col-10">
+                    <h2 class="title">Hola, soy Pablo Fretes</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-2 col-10">
+                    <p>Trabajo en sistemas hace más de 10 años, pero la tecnología es parte de mi vida desde hace más de 30. Me encanta programar, investigar y crear cosas nuevas. Desarrollo tanto para la web como para apps móviles (nativas e híbridas), siempre buscando soluciones simples y efectivas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia">
+            <h2 class="title">Experiencia</h2>
+            
+            <div class="timeline-container">
+                <!-- Línea vertical continua -->
+                <div class="timeline-line"></div>
+                
+                <!-- Experiencia 1 -->
+                <div class="experiencia-item">
+                    <div class="dot"></div>
+                    <div class="contenido">                       
+                        <h4>2025 - Actualidad</h4>
+                        <h5>Dirección de Sistemas – Municipio de Marcos Paz</h5>
+                        <p>Trabajo en el desarrollo de soluciones tecnológicas para el municipio, participando en proyectos de software con tecnologías como Angular, Node.js, NestJS, .NET Core, Flutter y Docker. Desarrollo tanto en frontend como backend, integrando sistemas internos y aplicaciones móviles orientadas a la gestión pública.</p>
+                    </div>
+                </div>
+        
+                <!-- Experiencia 2 -->
+                <div class="experiencia-item">
+                    <div class="dot"></div>
+                    <div class="contenido">
+                        <h3>2025 - Actualidad</h3>
+                        <h4>Desarrollador de Sistemas – Ministerio de Justicia</h4>
+                        <p>Participé en el desarrollo de sistemas internos y herramientas de gestión utilizando Angular para el frontend, y NestJS junto con .NET Core en el backend. Colaboré en proyectos enfocados en la digitalización de procesos y la mejora de servicios administrativos.</p>
+                    </div>
+                </div>
+        
+                <!-- Experiencia 3 -->
+                <div class="experiencia-item">
+                    <div class="dot"></div>
+                    <div class="contenido">
+                        <h3>2025 - Actualidad</h3>
+                        <h4>Consultor y Desarrollador Freelance – Utopía Soft</h4>
+                        <p>Fundé mi propia consultora para brindar soluciones tecnológicas a medida. Trabajo con empresas de distintos rubros desarrollando aplicaciones web y móviles usando NestJS, Angular, React y Flutter. Me encargo tanto del desarrollo full stack como del trato directo con los clientes, desde la planificación hasta la entrega final.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <div class="container py-5">
+                <h2 class="mb-4 title">Proyectos</h2>
+                <div class="row g-4">
+              
+                  <!-- Proyecto 1 -->
+                  <div class="col-md-6">
+                    <div class="card bg-secondary text-white h-100">
+                      <img src="screenshot1.jpg" class="card-img-top project-img" alt="Proyecto 1">
+                      <div class="card-body">
+                        <h5 class="card-title">Sistema de Gestión Interno</h5>
+                        <p class="card-text">Aplicación web para la gestión de trámites municipales. Incluye roles de usuario, seguimiento de expedientes y notificaciones.</p>
+                        <div class="mb-2">
+                          <span class="badge bg-info text-dark badge-tech">Angular</span>
+                          <span class="badge bg-info text-dark badge-tech">NestJS</span>
+                          <span class="badge bg-info text-dark badge-tech">PostgreSQL</span>
+                          <span class="badge bg-info text-dark badge-tech">Docker</span>
+                        </div>
+                        <p class="text-warning mb-0">🔒 Proyecto interno - sin acceso público</p>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!-- Proyecto 2 -->
+                  <div class="col-md-6">
+                    <div class="card bg-secondary text-white h-100">
+                      <img src="screenshot2.jpg" class="card-img-top project-img" alt="Proyecto 2">
+                      <div class="card-body">
+                        <h5 class="card-title">App de Reservas Deportivas</h5>
+                        <p class="card-text">App móvil híbrida para reservar canchas en clubes de barrio. Funciona con geolocalización y pagos online.</p>
+                        <div class="mb-2">
+                          <span class="badge bg-info text-dark badge-tech">Flutter</span>
+                          <span class="badge bg-info text-dark badge-tech">NestJS</span>
+                          <span class="badge bg-info text-dark badge-tech">JWT Auth</span>
+                        </div>
+                        <a href="https://miappreserva.com" target="_blank" class="btn btn-outline-light btn-sm">Ver proyecto</a>
+                      </div>
+                    </div>
+                  </div>
+              
+                </div>
+              </div>
+        </section>
+
+        <section id="contacto">
+            <h2 class="title">Contacto</h2>
+            <div class="row justify-content-center">
+                <form class="col-6">
+                    <div class="row mb-3">
+                        <div class="col-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                        </div>
+                        <div class="col-9">
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-3">
+                            <label for="email" class="form-label">Email</label>
+                        </div>
+                        <div class="col-9">
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                        </div>
+                        <div class="col-9">
+                            <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>            
+        </section>
+    </main>
+    
+</body>
+</html>

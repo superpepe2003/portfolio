@@ -1,0 +1,146 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav {    
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* width: 40%; */
+    padding: 0.6rem 2rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #384194;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Clase que se añadirá con JavaScript cuando haya scroll */
+nav.scrolled {
+    background-color: #384194;
+    border-radius: 10px;
+    z-index: 1000; /* Asegura que el nav esté por encima de otros elementos */
+}
+nav.scrolled a {
+    color: #fff; /* Cambia el color del texto al blanco */
+}
+
+body {
+    /* Gradiente radial (comentado por ahora) */
+    /*background: radial-gradient(circle at center,
+        #280453 0%,
+        #0f0441 50%,
+        #1a0033 100%
+    );*/
+    /* Gradiente lineal con prefijo webkit y estándar */
+    /* background: -webkit-linear-gradient(302deg, #121959,#172179,#384194); */
+    /* background: linear-gradient(302deg, #121959,#172179,#384194); */
+    background: -webkit-linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 75%, rgba(56, 65, 148, 1) 100%);
+    background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 75%, rgba(56, 65, 148, 1) 100%);
+    min-height: 100vh;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
+    color: rgb(36, 35, 35);
+}
+
+/* Secciones */
+section {
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+    scroll-margin-top: 70px;
+}
+
+#experiencia {
+    padding: 2rem;
+}
+
+.timeline-container {
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Línea vertical continua */
+.timeline-line {
+    position: absolute;
+    left: 0px; /* Ajustado para que pase por el medio del punto (5px + 6px, siendo 12px el ancho del punto) */
+    top: 6px; /* Comienza desde el medio del primer punto */
+    height: calc(100% - 18px); /* Altura ajustada para terminar en el último punto */
+    width: 2px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.experiencia-item {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 4rem; /* Espacio entre items */
+    padding-left: 1rem;
+}
+
+.dot {
+    position: absolute;
+    left: -26px;
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255,1.0);
+    border-radius: 50%;
+    z-index: 1; /* Asegura que el punto esté sobre la línea */
+}
+
+.contenido {
+    flex: 1;
+}
+
+.contenido img {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Asegura que no haya línea después del último punto */
+.experiencia-item:last-child .timeline-line {
+    display: none !important;
+}
+
+.img-pic {
+    width: 7.5em;
+    height: 7.5em;
+    border-radius: 50%;
+    border: 2px solid #dae6af;
+    object-fit: cover;
+}
+
+input, textarea {
+    width: 100%; /* Asegúrate de que no haya un ancho máximo limitado */
+}
+
+.project-img {
+    object-fit: cover;
+    height: 200px;
+  }
+  .badge-tech {
+    margin-right: 4px;
+  }
+
+  .title {
+    color: #384194;
+  }
