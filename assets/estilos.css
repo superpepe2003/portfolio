@@ -51,6 +51,8 @@ header {
 
 nav {    
   position: fixed;
+  /* background-color: black; */
+  /* z-index: 10050; */
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -73,13 +75,13 @@ nav a {
   font-weight: 500;
 }
 
-nav.scrolled {
-  background-color: #384194;
+.scrolled {
+  background-color: #101011;
   border-radius: 10px;
-  z-index: 1000;
+  z-index: 10050;
 }
 
-nav.scrolled a {
+.scrolled a {
   color: #fff;
 }
 
