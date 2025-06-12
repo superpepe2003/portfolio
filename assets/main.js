@@ -2,6 +2,31 @@ document.addEventListener('DOMContentLoaded', function() {
     const nav = document.querySelector('nav');
    
     // const items = document.querySelectorAll('.experiencia-item');
+    const form = document.querySelector('form[action^="https://formspree.io"]');
+    
+    form.addEventListener('submit', function(e) {
+        const nombre = form.nombre.value.trim();
+        const email = form.email.value.trim();
+        const mensaje = form.mensaje.value.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        let errores = [];
+
+        if (!nombre) {
+        errores.push("El nombre es obligatorio.");
+        }
+        if (!email || !emailRegex.test(email)) {
+        errores.push("El email no es válido.");
+        }
+        if (!mensaje) {
+        errores.push("El mensaje es obligatorio.");
+        }
+
+        // Si hay errores, evita el envío y muestra alert
+        if (errores.length > 0) {
+        e.preventDefault();
+        alert(errores.join('\n'));
+        }
+    });
 
     function updateActiveSection() {
         
